@@ -11,8 +11,11 @@ header {
     font-size: 28px;
     text-align: center;
     font-family: 'Georgia', Times, Times New Roman, serif;
-  }
+    clear: both;
+    overflow: hidden;
+}
   body{
+      min-width: 100%;
       font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   }
   .name-logo{
@@ -25,12 +28,18 @@ header {
       font-size: smaller;
       padding: 20px;
   }
+  a:link,a:visited{
+      color:#777777;
+  }
+  a:hover{
+      color: #4aaaa5;
+  }
   .about,.portfolio,.contacts{
     float: left;
     color: #777777;
     font-size: small;
     padding: 2px 20px ;
-    margin-top: 20px;
+    margin-top: 30px;
   
   }
   .about{
@@ -41,13 +50,13 @@ header {
       border-left: .5px solid #cccccc;
   }
 
-  #main-about{
+  #main-body{
       background-color: #ffffff;
       margin: 40px 160px;
       width: 960px;
-      height: 340px;
+      height: 400px;
   }
-  .title-about{
+  .title{
       font-size: 20px;
       padding: 30px 0px;
       margin: 0px 30px;
@@ -55,8 +64,36 @@ header {
       font-family: 'Georgia', Times, Times New Roman, serif;
       border-bottom: 2px solid #cccccc;
   }
+  #about-img{
+      float: left;
+      margin: 40px 30px;
+  }
+  .my-about{
+      float: left;
+      color:#777777;
+      margin: 40px 30px;
+      width: 700px;
+      height: 500px;
+      line-height: 1.6;  
+  }
+  form{
+      color:#777777;
+      margin-left: 40px;
+  }
+  .input-form{
+      width: 860px;
+  }
+ .message{
+    height: 100px;
+}
+.enter{
+    color: #4aaaa5;
+}
 footer{
+    clear: both;
     background-color: #666666;
     border-top: 3px solid #4aaaa5;
-   
+   width: 100%;
+   height: 65px;
+   position: fixed;
 }
